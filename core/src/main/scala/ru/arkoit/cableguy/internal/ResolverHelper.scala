@@ -168,7 +168,7 @@ private[cableguy] class ResolverHelper(val c: blackbox.Context) {
         }
 
         val item = ContainerItem(
-          TermName(s"jit_${tpe}_${resolutionTask.container.index}"),
+          TermName(s"jit_${container.index}"),
           q"new ${tpe.typeConstructor.typeSymbol}(..${resolvedArgs.map(_.item.termName)})",
           tpe,
           resolutionTask.scope,

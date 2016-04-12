@@ -161,4 +161,8 @@ class CableguySpec extends FlatSpec with Matchers {
 
     "val result = Resolver().resolveTagged[A, myTag]" shouldNot typeCheck
   }
+
+  it should "correctly resolve services with imported dependencies" in {
+    val result = Resolver().resolve[Foo]
+  }
 }

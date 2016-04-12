@@ -19,7 +19,7 @@ Quick facts
 
 Installation
 ------------
-It is not yet published to the maven central (it will be soon). For now you can git clone the repository and publish it locally (sbt:publishLocal). Then depend on it in your project:
+It is not yet published to the maven central (it will be soon). For now you can git clone the repository and publish it locally (sbt publishLocal). Then depend on it in your project:
 ```scala
 libraryDependencies ++= Seq(
   "ru.arkoit" %% "cableguy-core" % "0.1.0-SNAPSHOT"

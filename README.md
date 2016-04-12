@@ -19,13 +19,16 @@ Quick facts
 
 Installation
 ------------
-It is not yet published to the maven central (it will be soon). For now you can git clone the repository and publish it locally (sbt publishLocal). Then depend on it in your project:
+This project is published at Maven Central. However, there is no release version yet. To depend on the *SNAPSHOT* version use the following sbt snippet:
+
 ```scala
+resolvers += Resolver.sonatypeRepo("snapshots")
+
 libraryDependencies ++= Seq(
   "ru.arkoit" %% "cableguy-core" % "0.1.0-SNAPSHOT"
 )
 ```
-For now this project is compatible only with scala 2.11.\*. For now there is no final decision whether it's worth to support scala 2.10.\*. 
+For now this project is compatible only with scala 2.11.\*. There is no final decision whether it's worth to support scala 2.10.\*. 
 
 Just-In-Time resolution
 -----------------------

@@ -6,5 +6,7 @@ jdk:
   - openjdk7
   - oraclejdk7
   - oraclejdk8
-scripts:
-  - sbt ++$TRAVIS_SCALA_VERSION clean test
+script:
+  - sbt ++$TRAVIS_SCALA_VERSION clean coverage test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)

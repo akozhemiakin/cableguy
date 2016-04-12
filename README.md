@@ -19,10 +19,10 @@ Quick facts
 
 Installation
 ------------
-It is not yet published to the maven central (it will be soon). For now you can git clone the repository and publish it locally (sbt:publishLocal). Then depend on it in your project:
+It is not yet published to the maven central (it will be soon). For now you can git clone the repository and publish it locally (sbt publishLocal). Then depend on it in your project:
 ```scala
 libraryDependencies ++= Seq(
-  "ru.arkoit" %% "cableguy-core" % "0.1.0"
+  "ru.arkoit" %% "cableguy-core" % "0.1.0-SNAPSHOT"
 )
 ```
 For now this project is compatible only with scala 2.11.\*. For now there is no final decision whether it's worth to support scala 2.10.\*. 

@@ -1,5 +1,3 @@
 package ru.arkoit.cableguy.nested
 
-class Bar {
-
-}
+case class Bar()

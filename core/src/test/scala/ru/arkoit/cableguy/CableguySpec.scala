@@ -2,6 +2,7 @@ package ru.arkoit.cableguy
 
 import org.scalatest.{FlatSpec, Matchers, Tag}
 import ru.arkoit.cableguy.annotations.{ServiceTag, prototypeScope, provides}
+import ru.arkoit.cableguy.nested.Bar
 import shapeless.HNil
 
 class CableguySpec extends FlatSpec with Matchers {
@@ -164,5 +165,9 @@ class CableguySpec extends FlatSpec with Matchers {
 
   it should "correctly resolve services with imported dependencies" in {
     val result = Resolver().resolve[Foo]
+    assert(result == Foo(Bar()))
+
+    val result2 = Resolver(BarProvider :: HNil).resolve[Foo]
+    assert(result2 == Foo(Bar()))
   }
 }

@@ -4,6 +4,8 @@ Cableguy is yet another [Dependency Injection (DI)][di] library for Scala. It is
 
 Quick facts
 -----------
+
+[![Join the chat at https://gitter.im/akozhemiakin/cableguy](https://badges.gitter.im/akozhemiakin/cableguy.svg)](https://gitter.im/akozhemiakin/cableguy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 * It is a compile-time dependency injection implementation (I.e. no runtime-reflection involved)
 * It is implemented with a help of Scala macros
 * It allows you to perform deep Just-In-Time resolution

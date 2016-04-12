@@ -4,6 +4,7 @@ Cableguy is yet another [Dependency Injection (DI)][di] library for Scala. It is
 Badges
 ------
 [![Build Status](https://travis-ci.org/akozhemiakin/cableguy.svg?branch=master)](https://travis-ci.org/akozhemiakin/cableguy)
+[![codecov.io](https://codecov.io/github/akozhemiakin/cableguy/coverage.svg?branch=master)](https://codecov.io/github/akozhemiakin/cableguy?branch=master)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-green.svg)](https://gitter.im/akozhemiakin/cableguy)
 
 Quick facts

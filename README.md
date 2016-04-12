@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/akozhemiakin/cableguy/master/cableguy-logo.jpeg" /></p>
+
 Cableguy is yet another [Dependency Injection (DI)][di] library for Scala. It is compile time, macros based and runtime-reflection free.
 
 Quick facts
